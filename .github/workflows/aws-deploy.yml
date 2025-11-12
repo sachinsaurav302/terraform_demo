@@ -7,6 +7,7 @@ on:
         description: "AWS Region (default: ap-south-1)"
         required: false
         default: "ap-south-1"
+        type: string            # ✅ Added type
       role_arn:
         description: "AWS Role ARN to assume"
         required: true
@@ -15,6 +16,7 @@ on:
         description: "Message to print after deployment"
         required: false
         default: "Deployment successful via OIDC!"
+        type: string            # ✅ Added type
 
 jobs:
   deploy:
