@@ -2,11 +2,14 @@ name: Call AWS Deploy Reusable Workflow
 
 on:
   push:
-    branches: [main]   # jab main branch me push hoga, ye chalega
+    branches: [main]
 
 jobs:
   call-deploy:
-    uses: ./.github/workflows/aws-deploy.yml   # 👈 yahan call ho raha hai
+    uses: ./.github/workflows/aws-deploy.yml
+    permissions:
+      id-token: write        # 👈 ye line bahut important hai
+      contents: read
     with:
       aws_region: "ap-south-1"
       role_arn: "arn:aws:iam::559413642096:role/GitHubOIDCRole"
