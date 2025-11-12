@@ -1,0 +1,13 @@
+name: Call AWS Deploy Reusable Workflow
+
+on:
+  push:
+    branches: [main]   # jab main branch me push hoga, ye chalega
+
+jobs:
+  call-deploy:
+    uses: ./.github/workflows/aws-deploy.yml   # 👈 yahan call ho raha hai
+    with:
+      aws_region: "ap-south-1"
+      role_arn: "arn:aws:iam::559413642096:role/GitHubOIDCRole"
+      deploy_message: "OIDC reusable workflow tested successfully!"
