@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/.github/workflows/deploy"
+    schedule:
+      interval: "daily"
+      reviewers:
+        - "sachinsaurav302"
+
+
+        
