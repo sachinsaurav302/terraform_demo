@@ -8,7 +8,7 @@ jobs:
   call-deploy:
     uses: ./.github/workflows/aws-deploy.yml
     permissions:
-      id-token: write        # 👈 ye line bahut important hai
+      id-token: write        
       contents: read
     with:
       aws_region: "ap-south-1"
