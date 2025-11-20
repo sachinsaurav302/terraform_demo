@@ -8,3 +8,7 @@ updates:
     # Add Reviewer
     reviewers:
       - "sachinsaurav302"
+
+ignore:
+  - dependency-name: ".github/workflows/main.yml"
+    versions: ["*"]
