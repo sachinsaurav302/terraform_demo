@@ -2,7 +2,7 @@ version: 2
 updates:
   # 1) GitHub Actions updates
   - package-ecosystem: "github-actions"
-    directory: "/.github/workflows/deploy"
+    directory: "/"
     schedule:
       interval: "daily"
     # Add Reviewer
