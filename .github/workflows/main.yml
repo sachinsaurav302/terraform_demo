@@ -6,7 +6,7 @@ on:
 
 jobs:
   call-deploy:
-    uses: ./.github/workflows/aws-deploy.yml
+    uses: ./.github/workflows/deploy.yml
     permissions:
       id-token: write        # 👈 ye line bahut important hai
       contents: read
